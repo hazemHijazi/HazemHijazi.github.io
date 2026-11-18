@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Giving a family of government products one fingerprint · Hazem Hijazi</title>
+<meta name="description" content="How I led four designers to build one hybrid design system for a Saudi government-tech company.">
+<meta property="og:title" content="Giving a family of government products one fingerprint · Hazem Hijazi">
+<meta property="og:description" content="How I led four designers to build one hybrid design system for a Saudi government-tech company.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="me" href="../index.html">Hazem Hijazi</a>
+  <ul>
+    <li><a href="../index.html#work">Work</a></li>
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../assets/Hazem_Hijazi_CV_2026.pdf" target="_blank" rel="noopener">Resume</a></li>
+    <li><a href="../assets/Hazem_Hijazi_Portfolio_2026.pdf" target="_blank" rel="noopener">Portfolio</a></li>
+  </ul>
+</div></header>
+
+<main class="wrap">
+<div class="read" style="max-width:900px"><a class="back" href="../index.html#work">← All work</a></div>
+
+<header class="chead read" style="max-width:900px">
+  <h1>Giving a family of government products one fingerprint</h1>
+  <div class="meta"><span><b>Role</b> Design system lead</span><span><b>Team</b> 4 designers</span><span><b>Client</b> a Saudi government-tech company, through Synechron</span></div>
+</header>
+
+<div class="short read">
+  <div class="label">The short version</div>
+  <p>The client built digital services for Saudi transport authorities, and every product looked like it came from a different company. I led four designers to build one hybrid design system on top of the Saudi national design system: 8 foundations, 30+ components, light and dark tokens, Arabic RTL and a guidebook. Halfway through, the project stopped for seven months. Getting it moving again taught me the most.</p>
+</div>
+
+<article class="article read">
+  <h2>No fingerprint</h2>
+  <p>I first noticed the problem while designing screens for the client's transport products: land, rail, maritime, postal. Each product had been built by its own team, from its own user stories, on its own timeline. Each had its own buttons, its own blues, its own way of doing tables and forms. RTL was handled screen by screen.</p>
+  <p>If you used two of these services, nothing would tell you they came from the same organisation. There was no fingerprint.</p>
+</article>
+
+<div class="wide">
+  <div class="before">
+    <div style="border-color:#7a9a8a"><b>Product A</b>Its own buttons, its own blues, square corners</div>
+    <div style="border-color:#c9977a;border-radius:20px"><b>Product B</b>Rounded cards, a different type scale</div>
+    <div style="border-color:#9a9ac9;border-radius:10px"><b>Product C</b>Another table, another form pattern</div>
+    <div style="border-color:#b99ab9;border-radius:0"><b>Product D</b>RTL fixed one screen at a time</div>
+  </div>
+  <div class="cap">How the products related to each other before. Redrawn: I can't share the real screens.</div>
+</div>
+
+<article class="article read">
+  <h2>Why we went hybrid</h2>
+  <p>We had three options, and the decision shaped everything after it.</p>
+  <div class="tablewrap"><table>
+    <tr><th>Option</th><th>Good</th><th>Bad</th></tr>
+    <tr><td>Use the national design system (DGA) as it is</td><td>Fast, and aligned with the standard</td><td>No identity for the client, and gaps for the dense tables and dashboards their products needed</td></tr>
+    <tr><td>Build everything from scratch</td><td>Full control</td><td>Slow, and it drifts away from the national standard</td></tr>
+    <tr class="pick"><td><span class="tick">✓ A hybrid</span></td><td>The national system as the base, the client's brand and missing patterns on top</td><td>Needs clear rules about what can change, so we wrote them</td></tr>
+  </table></div>
+  <p style="margin-top:18px">We also didn't start from zero. A designer before us had begun a library, so we kept what worked, and used Google's Material Design for the patterns the national system didn't cover.</p>
+
+  <h2>What we built</h2>
+  <p><b>8 foundations</b></p>
+  <div class="chips"><span>Colour</span><span>Typography</span><span>Spacing</span><span>Borders</span><span>Shadows and effects</span><span>Layout grid</span><span>Logos</span><span>Glass effects</span></div>
+  <p style="margin-top:20px"><b>30+ components</b>, each with its states and variants</p>
+  <div class="chips"><span>Buttons</span><span>Text inputs</span><span>Tables</span><span>Cards</span><span>Tabs</span><span>Navigation</span><span>App bars</span><span>Modals</span><span>Menus</span><span>Notifications</span><span>Pagination</span><span>File upload</span><span>Progress tracker</span><span>Tooltips</span><span>Charts</span><span>and more</span></div>
+  <p style="margin-top:20px">All of it sits on light and dark colour tokens, an 8-pixel spacing grid, and Arabic RTL built into the system rather than added later.</p>
+
+  <h2>A design system is mostly habits</h2>
+  <p>Components are the visible part. What keeps a system alive is how the team works on it, so I spent as much time on that as on the library.</p>
+  <ol class="steps">
+    <li><b>A 10 a.m. stand-up every day</b> to review changes and updates together.</li>
+    <li><b>A shared work log</b> where every designer wrote down what they'd built and why.</li>
+    <li><b>A critique before anything was merged:</b> each designer presented their work and got feedback first.</li>
+    <li><b>Rules for anyone joining:</b> what can change, how to name things, who approves.</li>
+  </ol>
+  <p>I also wrote the guidebook: one document for new designers, BAs, developers and management, covering tokens, components, version control, governance, onboarding and how to contribute.</p>
+
+  <p class="quote">Then the project stopped for seven months.</p>
+  <p>When it came back, the momentum and most of the context were gone. It would have been easy to pick up the components where we'd left off. I rebuilt the plan first instead: a design system plan, an onboarding plan, an audit sheet, a tracking sheet and a presentation for the directors, so everyone agreed again on what we were doing and why.</p>
+  <p>A new designer joined and was contributing within weeks, because the onboarding was now written down instead of living in my head.</p>
+
+  <h2>How we checked it</h2>
+  <p>Before handing anything to developers, we reviewed every component for consistent naming, complete states and variants, and the final colour variables. We also ran a separate review of whether each component was ready to build.</p>
+  <div class="note">The programme didn't budget for usability testing, so checking here meant design review, not testing with users. It's the first thing I'd add next time.</div>
+
+  <h2>What I'd do differently</h2>
+  <ul>
+    <li><b>Measure adoption from day one.</b> How many screens use the library tells you more than how many components exist.</li>
+    <li><b>Keep the directors close.</b> A short monthly update might have prevented the pause.</li>
+    <li><b>Bring developers in earlier,</b> so readiness isn't the last step.</li>
+  </ul>
+</article>
+
+<a class="next" href="white-label-design-system.html"><div><span class="label">Next case study</span><h3>One design system, any brand</h3></div><span class="go">Read it →</span></a>
+</main>
+
+<div class="wrap"><footer>Hazem Hijazi · Amman, Jordan · <a href="mailto:hazem.hijazi3@gmail.com">hazem.hijazi3@gmail.com</a></footer></div>
+</body>
+</html>

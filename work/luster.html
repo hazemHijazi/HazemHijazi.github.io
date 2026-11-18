@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LUSTER: one token layer, three brands · Hazem Hijazi</title>
+<meta name="description" content="A multi-brand design system built by a team of seven in Osama Eldreiny's course: three brands, seven theming switches.">
+<meta property="og:title" content="LUSTER: one token layer, three brands · Hazem Hijazi">
+<meta property="og:description" content="A multi-brand design system built by a team of seven in Osama Eldreiny's course: three brands, seven theming switches.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="me" href="../index.html">Hazem Hijazi</a>
+  <ul>
+    <li><a href="../index.html#work">Work</a></li>
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../assets/Hazem_Hijazi_CV_2026.pdf" target="_blank" rel="noopener">Resume</a></li>
+    <li><a href="../assets/Hazem_Hijazi_Portfolio_2026.pdf" target="_blank" rel="noopener">Portfolio</a></li>
+  </ul>
+</div></header>
+
+<main class="wrap">
+<div class="read" style="max-width:900px"><a class="back" href="../index.html#work">← All work</a></div>
+
+<header class="chead read" style="max-width:900px">
+  <h1>LUSTER: one token layer, three brands</h1>
+  <div class="meta"><span><b>Role</b> Design system designer, one of seven</span><span><b>Course</b> Design Systems and Tokens with AI, by Osama Eldreiny</span><span><b>Tools</b> Figma variables, HTML and CSS</span></div>
+</header>
+
+<div class="wide" style="max-width:900px"><a href="https://luster-d2n.pages.dev/case-study" target="_blank" rel="noopener"><img src="../assets/img/luster.png" alt="The LUSTER case study site"></a><div class="cap">The team's case study site. Click to open it.</div></div>
+
+<div class="short read">
+  <div class="label">The short version</div>
+  <p>LUSTER was the final project of Osama Eldreiny's Design Systems and Tokens with AI course, built by a team of seven. It's a multi-brand system with three brands, light and dark modes and seven theming switches, mirrored one-to-one between Figma variables and production CSS. Like everyone on the team, I planned and mind-mapped the tokens for a set of components, so the whole system used one naming structure. It's where I learned the architecture I later used to build a white-label system on my own.</p>
+</div>
+
+<article class="article read">
+  <h2>Why a team project is here</h2>
+  <p>It sits between my first design system and my third. The first taught me how to lead a team and keep a system running. LUSTER took me deeper into token architecture. On the third, I built that architecture alone and pushed it further.</p>
+
+  <h2>The idea</h2>
+  <p>Most companies add a second brand by copying the component library and recolouring it. Now there are two libraries to maintain, and they drift apart the moment anything changes. LUSTER does it the other way: every brand shares one set of components, and only the tokens change.</p>
+
+  <h2>Three layers of tokens</h2>
+  <ol class="steps">
+    <li><b>Options:</b> raw values like colour palettes, spacing, sizes, radii and fonts. No decisions yet.</li>
+    <li><b>Semantic:</b> what a value means, like background, text, border or error. Each brand and mode remaps this layer.</li>
+    <li><b>Component:</b> what each component uses, such as <code>menuItem/hover/bg</code>. It always points to a semantic token, never a raw value.</li>
+  </ol>
+
+  <h2>Seven switches</h2>
+  <div class="chips"><span>Brand: Diamond, Amber, Opal</span><span>Light and dark</span><span>English LTR and Arabic RTL</span><span>Serif or sans typography</span><span>Density</span><span>Corner radius</span><span>Shadow</span></div>
+  <p style="margin-top:16px">Each switch is its own Figma variable collection, so you can change one without touching the others.</p>
+
+  <h2>19 components</h2>
+  <div class="chips"><span>Button</span><span>Toggle</span><span>Radio button</span><span>Input field</span><span>Avatar</span><span>Logo</span><span>Palettes</span><span>Alert</span><span>List items</span><span>Menu item</span><span>Choose card</span><span>Image</span><span>Meeting card</span><span>Card</span><span>Navbar</span><span>Tabs</span><span>Footer</span><span>Header</span><span>Pagination</span></div>
+  <p style="margin-top:16px">Every component has a live themed preview, a token table that matches its Figma variable path exactly, and code to copy.</p>
+
+  <h2>My part</h2>
+  <p>Before anyone built components, each of us took a set of them and planned their tokens: mapping every property (background, text, border, spacing, states) to the right semantic token, and agreeing one naming pattern across the whole system. That shared structure is what made it possible for seven people to build one library that reads as if one person made it.</p>
+
+  <h2>What I took into my next system</h2>
+  <ul>
+    <li><b>Components never touch raw values.</b> I used the same three tiers on my white-label system.</li>
+    <li><b>Each switch is independent.</b> LUSTER had seven; my white-label system has nine.</li>
+    <li><b>Design and code use the same names.</b> On my next system I agreed token names and the CSS structure directly with developers.</li>
+  </ul>
+  <p style="margin-top:20px"><a href="https://luster-d2n.pages.dev/case-study" target="_blank" rel="noopener">Read the team's full case study →</a><br><a href="https://luster-d2n.pages.dev/home.html" target="_blank" rel="noopener">Browse the documentation →</a><br><a href="https://luster-d2n.pages.dev/pages/design-output.html" target="_blank" rel="noopener">Try the live preview →</a></p>
+</article>
+
+<a class="next" href="aounak.html"><div><span class="label">Next case study</span><h3>AOUNAK: booking a truck to move furniture</h3></div><span class="go">Read it →</span></a>
+</main>
+
+<div class="wrap"><footer>Hazem Hijazi · Amman, Jordan · <a href="mailto:hazem.hijazi3@gmail.com">hazem.hijazi3@gmail.com</a></footer></div>
+</body>
+</html>

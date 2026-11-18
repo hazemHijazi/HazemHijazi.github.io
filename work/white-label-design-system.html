@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One design system, any brand · Hazem Hijazi</title>
+<meta name="description" content="A white-label design system with nine theme switches, built solo with a Figma AI agent.">
+<meta property="og:title" content="One design system, any brand · Hazem Hijazi">
+<meta property="og:description" content="A white-label design system with nine theme switches, built solo with a Figma AI agent.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="me" href="../index.html">Hazem Hijazi</a>
+  <ul>
+    <li><a href="../index.html#work">Work</a></li>
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../assets/Hazem_Hijazi_CV_2026.pdf" target="_blank" rel="noopener">Resume</a></li>
+    <li><a href="../assets/Hazem_Hijazi_Portfolio_2026.pdf" target="_blank" rel="noopener">Portfolio</a></li>
+  </ul>
+</div></header>
+
+<main class="wrap">
+<div class="read" style="max-width:900px"><a class="back" href="../index.html#work">← All work</a></div>
+
+<header class="chead read" style="max-width:900px">
+  <h1>One design system, any brand</h1>
+  <div class="meta"><span><b>Role</b> Solo designer and system owner</span><span><b>Worked with</b> the development team</span><span><b>For</b> a global consulting firm</span></div>
+</header>
+
+<div class="short read">
+  <div class="label">The short version</div>
+  <p>The firm wanted to launch branded websites for different clients without designing and building each one from scratch. Before designing anything, I set one rule: a new website should only need new settings, never new components. Then I built a system with nine switches, from brand and colour mode to language direction and density. A Figma AI agent did the production work. The architecture and every decision were mine.</p>
+</div>
+
+<article class="article read">
+  <h2>The rule</h2>
+  <p>A new website is created by changing:</p>
+  <div class="chips g"><span>Content</span><span>Brand</span><span>Theme</span><span>Typography</span><span>Colour mode</span><span>Language</span></div>
+  <p style="margin-top:16px">…without changing:</p>
+  <div class="chips r"><span>Components</span><span>Templates</span><span>Layout logic</span><span>Responsiveness</span><span>Accessibility structure</span></div>
+  <p style="margin-top:18px">Everything else followed from that. If a decision would force someone to edit a component to launch a new brand, it was the wrong decision.</p>
+  <p>Two early scope calls kept it focused: <b>responsive web only</b> (no native apps), and a <b>React front end</b>, so the system's structure matches how developers would build it.</p>
+
+  <h2>Five layers, from a colour value to a finished site</h2>
+  <ol class="steps">
+    <li><b>Foundation tokens:</b> raw colours, sizes, radii, shadows and fonts.</li>
+    <li><b>Component tokens:</b> what each component uses, pointing to roles, never raw values.</li>
+    <li><b>React components,</b> built by developers from the same token names.</li>
+    <li><b>Templates and pages:</b> home, services, blog, contact, search, 404.</li>
+    <li><b>Branded sites:</b> a brand is a set of switches, not a copy of the library.</li>
+  </ol>
+
+  <h2>The decisions that mattered</h2>
+  <div class="tablewrap"><table>
+    <tr><th>Question</th><th>What I didn't do</th><th>What I did</th></tr>
+    <tr class="pick"><td>Arabic</td><td>Make a mirrored copy of every component</td><td>Made language a switch: it flips direction, fonts and alignment in one go</td></tr>
+    <tr class="pick"><td>Brands</td><td>Copy the library per brand and recolour it</td><td>Made brand a switch on one shared library</td></tr>
+    <tr class="pick"><td>Colours</td><td>Let components use raw colour values</td><td>Three tiers: raw, then meaning, then component</td></tr>
+    <tr class="pick"><td>Screen sizes</td><td>Separate desktop and mobile components</td><td>Breakpoint tokens on the same components</td></tr>
+  </table></div>
+
+  <h2>Nine switches</h2>
+  <p>Each one is a set of Figma variables with its own options. Pick one option per switch and you have a complete theme.</p>
+</article>
+
+<div class="wide">
+  <div class="grid3">
+    <div class="tile"><b>Brand</b>4 brands on one component set</div>
+    <div class="tile"><b>Colour mode</b>Light, dark, high contrast</div>
+    <div class="tile"><b>Language</b>English left-to-right, Arabic right-to-left</div>
+    <div class="tile"><b>Typography</b>5 type themes for English and Arabic</div>
+    <div class="tile"><b>Font family</b>Primary and secondary fonts per language</div>
+    <div class="tile"><b>Density</b>Compact, default, comfortable</div>
+    <div class="tile"><b>Corners</b>Sharp, rounded, pill</div>
+    <div class="tile"><b>Shadow</b>Flat, subtle, default, raised</div>
+    <div class="tile"><b>Screen size</b>Desktop, tablet, mobile</div>
+  </div>
+</div>
+
+<article class="article read"><h2>Same component, four themes</h2><p>Here's what that looks like in practice: one form, with only the switches changed.</p></article>
+<div class="wide">
+  <div class="demo">
+    <div class="dt t1"><div class="lab">Brand A · light · rounded</div><div class="mini"><div class="h">Book a consultation</div><div class="p">Tell us about your project.</div><div class="in">Email address</div><div class="btn">Send request</div></div></div>
+    <div class="dt t2"><div class="lab">Brand B · dark · sharp</div><div class="mini"><div class="h">Book a consultation</div><div class="p">Tell us about your project.</div><div class="in">Email address</div><div class="btn">Send request</div></div></div>
+    <div class="dt t3"><div class="lab">High contrast · flat</div><div class="mini"><div class="h">Book a consultation</div><div class="p">Tell us about your project.</div><div class="in">Email address</div><div class="btn">Send request</div></div></div>
+    <div class="dt t4" dir="rtl"><div class="lab" dir="ltr">Brand C · Arabic · pill · compact</div><div class="mini ar"><div class="h">احجز استشارة</div><div class="p">أخبرنا عن مشروعك.</div><div class="in">البريد الإلكتروني</div><div class="btn">إرسال الطلب</div></div></div>
+  </div>
+  <div class="cap">Redrawn with made-up brands, using the same token logic. The real brands are confidential.</div>
+</div>
+
+<article class="article read">
+  <p>The library ended up with <b>25+ components</b>, <b>12 content blocks</b> (hero, call to action, card grid, FAQ, gallery, forms, cookie consent, search) and <b>9 page templates</b>, plus guides for designers and developers, a token guide, a CSS export workflow and a brand setup guide.</p>
+
+  <h2>Working with an AI agent</h2>
+  <p>I built this alone, so I used a Figma AI agent for the production work. It was fast at the repetitive parts: creating variables and options, and building component variants. It couldn't decide how the system should be structured, what to name things, or which trade-off to make. Those were mine, and I reviewed everything it produced.</p>
+  <p>That's the honest split. AI speeds up production. It doesn't replace judgement.</p>
+
+  <h2>How I tested it</h2>
+  <ul>
+    <li>Every component has test frames in light, dark and high contrast, and in Arabic and English side by side.</li>
+    <li>I added five extra colour brands without touching a single component.</li>
+    <li>I rebuilt an existing client landing page from the system, to prove the rule worked on a real page and not just in documentation.</li>
+    <li>I agreed token names and the CSS file structure with the development team.</li>
+  </ul>
+
+  <h2>What happened</h2>
+  <p>I handed the system and its documentation to an implementation partner to build the web components. I moved on before the build, so I don't have adoption numbers to show you.</p>
+  <p>Next time, I'd agree on a measurable target with the developers at the start, like how long it takes to launch a new brand, so the impact can be shown later.</p>
+</article>
+
+<a class="next" href="luster.html"><div><span class="label">Next case study</span><h3>LUSTER: one token layer, three brands</h3></div><span class="go">Read it →</span></a>
+</main>
+
+<div class="wrap"><footer>Hazem Hijazi · Amman, Jordan · <a href="mailto:hazem.hijazi3@gmail.com">hazem.hijazi3@gmail.com</a></footer></div>
+</body>
+</html>

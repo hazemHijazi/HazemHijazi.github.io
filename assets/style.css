@@ -38,6 +38,7 @@ em{font-style:italic}
 .mock{background:var(--paper-2);padding:0}.mock img{width:100%;height:100%;object-fit:contain}
 .hello h1{max-width:900px}
 .hello h1 i{color:var(--accent);font-style:italic}
+.facts li em{display:block;font-style:normal;font-size:14px;color:#6f6a61;margin-top:2px}
 .hello .intro{max-width:660px;margin-top:28px;font-size:20px;color:var(--ink-2)}
 .hello .core{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;max-width:700px}
 .hello .core li{background:var(--white,#fffdf9);border:1px solid var(--line,#e2dbcf);border-radius:999px;padding:7px 15px;font-size:15px;color:var(--ink-2)}
